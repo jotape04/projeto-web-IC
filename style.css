@@ -4,7 +4,8 @@
 }
 
 body {
-    background: url(./assets/background.gif) no-repeat center center fixed; 
+    height: 100vh;
+    background: url(./assets/background.gif) no-repeat center center; 
     background-size: cover;
     font-family: 'New Super Mario Font U', sans-serif;
 }
@@ -38,7 +39,7 @@ h1 {
 .intro h2 {
     font-size: 30px;
     width: 40vw;
-    color: black
+    color: #2CB01A;
 }
 
 #foto_jp {
@@ -108,4 +109,81 @@ h1 {
 
 .contacts-text {
     color: black;
+}
+
+@media only screen and (max-width: 1166px) {
+    body {
+        height: auto;
+    }
+    
+    h1 {
+        font-size: 50px;
+    }
+
+    .intro h2 {
+        font-size: 25px;
+    }
+
+    .card h2 {
+        font-size: 30px;
+    }
+
+    .contacts {
+        margin-bottom: 400px;
+    }
+}
+
+@media only screen and (max-width: 736px) {
+    h1 {
+        padding: 30px 5%;
+    }
+
+    .infos {
+        gap: 5vh;
+    }
+    
+    .contacts {
+        margin-bottom: 500px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 40px;
+        padding: 15px 0;
+    }
+
+    .intro {
+        flex-flow: column-reverse nowrap;
+        padding-bottom: 20px;
+    }
+
+    .intro div {
+        display: inline-block;
+        position: relative;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+    .intro h2 {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    #foto_jp {
+        height: auto;
+        width: 150px;
+        position: relative;
+        bottom: 50px;
+    }
+
+    .infos {
+        gap: 5vh;
+    }
+
+    .infos h2 {
+        font-size: 25px;
+    }
 }
